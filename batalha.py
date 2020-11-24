@@ -4,11 +4,11 @@ defesa1 = int(input())
 ataque2 = int(input()) 
 defesa2 = int(input()) 
 
-atk1 = atk1 if not atk1 == def2 else 0
-atk2 = atk2 if not atk2 == def1 else 0
+ataque1 = ataque1 if not ataque1 == defesa2 else 0
+ataque2 = ataque2 if not ataque2 == defesa1 else 0
 
-if((atk1 > 0 and atk2 == 0) or (atk2 > 0 and atk1 == 0)):
-  if(atk1 > atk2):
+if((ataque1 > 0 and ataque2 == 0) or (ataque2 > 0 and ataque1 == 0)):
+  if(ataque1 > ataque2):
     print(1)
   else:
     print(2)
